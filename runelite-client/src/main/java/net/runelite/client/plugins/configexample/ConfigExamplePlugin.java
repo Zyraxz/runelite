@@ -13,9 +13,14 @@ import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
-@PluginDescriptor(
-        name = "Example"
+@PluginDescriptor( //Used to inject the name, description and tags of the plugin itself.
+        name = "John Example",
+        description = "An Example used to teach John how to code RuneLite plugins.",
+        tags = {"config", "menu", "example"},
+        loadWhenOutdated = true,
+        enabledByDefault = false
 )
+
 public class ConfigExamplePlugin extends Plugin
 {
     @Inject
